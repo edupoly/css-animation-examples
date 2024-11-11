@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .navbar{
+            height:100px;
+            background-color: rgb(27, 89, 110);
+        }
+        .header{
+            height:50vh;
+            display: flex;
+            justify-content: space-evenly;
+            padding:5%;
+        }
+        .header .column:first-child{    
+            animation: slideright 1s;
+            height:80%;
+            width:500px;
+        }
+        .header .column:last-child{    
+            animation: zoomzoom 1s;
+            height:80%;
+            width:500px;
+        }
+        .himg{
+            width:100%;
+            /* animation: updown 1s ease 1s infinite; */
+            animation: updown 2s ease-in-out infinite alternate-reverse;
+        }
+        .clients{
+            display: flex;
+            justify-content: space-evenly;
+            animation: zoomzoom 1s;
+        }
+        .clients img{
+            width: 75px;
+            aspect-ratio:inherit;
+        }
+        @keyframes slideright {
+            from{
+                opacity:0.5;
+                transform: translateX(-40%);
+            }
+            to{
+                opacity:1;
+                transform: translateX(0%);
+            }
+        }
+        @keyframes zoomzoom {
+            from{
+                opacity:0.5;
+                transform: scale(50%);
+            }
+            to{
+                opacity:1;
+                transform: scale(100%);
+            }
+        }
+        @keyframes updown {
+            from{
+                transform: translateY(-10%);
+            }
+            to{
+                transform: translateY(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <div></div>
+        </div>
+        <div class="header">
+            <div class="column" style="background-color: #c4492e;"></div>
+            <div class="column" style="">
+                <img class="himg" src="https://themewagon.github.io/arsha/assets/img/hero-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="clients">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-1.png" alt="">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-2.png" alt="">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-3.png" alt="">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-4.png" alt="">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-5.png" alt="">
+        <img src="https://themewagon.github.io/arsha/assets/img/clients/client-6.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>

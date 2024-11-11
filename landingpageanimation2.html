@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            *{
+                font-family: sans-serif;
+                margin:0px;
+            }
+            #header{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-image: url(https://img.freepik.com/free-vector/white-abstract-background-design_361591-1470.jpg?t=st=1730214614~exp=1730218214~hmac=759631db63f5b135a1ac1d0d52b78d1cb595cfd763017a9695b0f20475d615e6&w=1800);
+            }
+            #himg{
+                width:50%;
+                padding:30px;
+            }
+            #content{
+                width:50%;
+                padding:30px;
+                animation: moveright 2s;
+            }
+            #content h1{
+                font-size: 3rem;
+            }
+            #himg img{
+                width:100%;
+                animation: zoomzoom 2s;
+            }
+            @keyframes moveright {
+                from{
+                    transform: translateY(30%);
+                }
+                to{
+                    transform: translateY(0%);
+                }
+            }
+            @keyframes zoomzoom {
+                from{
+                    transform: scale(30%);
+                }
+                to{
+                    transform: scale(100%);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="content">
+                <h1>
+                    Edupoly Learning Center for Excellence
+                </h1>
+                <p>
+                    This environment of joy boosts motivation and helps learners internalize new knowledge in meaningful ways, rather than viewing it as a burden or chore.
+                </p>
+            </div>
+            <div id="himg">
+                <img src="https://bootstrapmade.com/content/demo/iLanding/assets/img/illustration-1.webp" alt="">
+            </div>
+
+        </div>
+    </body>
+</html>

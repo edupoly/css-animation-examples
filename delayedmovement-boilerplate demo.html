@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+            ul{
+                padding: 20px;
+                display: flex;
+                list-style: none;
+                flex-wrap: wrap;
+                background-color: rgb(23, 10, 10);
+                /* justify-content: center; */
+            }
+            ul li{
+                font-size: 3rem;
+                margin:10px;
+                width:0px;
+                overflow: hidden;
+                font-weight: bold;
+                color: white;
+                border-radius: 10px;
+                /* padding:10px 20px; */
+            }
+            ul li:nth-child(1){
+                background-color: rgb(40, 174, 219);
+                animation: moveright 0.5s ease 0s 1 normal forwards;
+            }
+            ul li:nth-child(2){
+                background-color: rgb(231, 19, 228);
+                animation: moveright 0.5s ease 0.5s 1 normal forwards;
+            }
+            ul li:nth-child(3){
+                background-color: rgb(64, 71, 74);
+                animation: moveright 0.5s ease 1.0s 1 normal forwards;
+
+            }
+            ul li:nth-child(4){
+                background-color: rgb(14, 103, 42);
+                animation: moveright 0.5s ease 1.50s 1 normal forwards;
+
+            }
+            @keyframes moveright {
+                from{
+                    width:0px;
+                    padding:10px 20px;
+                }
+                to{
+                    width:200px;
+                    padding:10px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>ReactJS</li>
+            <li>Angular</li>
+            <li>NodeJS</li>
+            <li>Mongo</li>
+        </ul>
+    </body>
+</html>
